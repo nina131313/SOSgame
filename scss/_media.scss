@@ -1,0 +1,563 @@
+@media(max-width: 1200px) {
+  .about {
+    &__text {
+      padding-left: 0;
+      margin-right: 15px;
+    }
+
+    &__slider {
+      max-width: 500px;
+    }
+
+    &__box {
+      margin-right: 15px;
+    }
+  }
+
+  .quotes {
+    height: auto;
+    padding-bottom: 50px;
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__uptitle {
+      padding-top: 0;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      max-width: 100%;
+    }
+
+    &__btn {
+      margin-bottom: 20px;
+    }
+
+    &__right {
+      position: initial;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__box {
+      position: initial;
+      margin-bottom: 25px;
+      margin-right: 10px;
+      max-width: 48%;
+
+      &--third {
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-bottom: auto;
+      }
+    }
+
+    &__left {
+      margin-bottom: 50px;
+    }
+  }
+
+  .newsletter {
+    &:before {
+      left: -100px;
+    }
+  }
+
+  .footer {
+    &__list {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__socials-link {
+      margin-right: 35px;
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .header {
+    &__list {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      flex-direction: column;
+      position: absolute;
+      left: 0;
+      bottom: -265px;
+      background-color: #fff;
+      text-align: center;
+      transition: all .3s;
+
+      &.active {
+        opacity: 1;
+        width: 100%;
+        height: 250px;
+        overflow: unset;
+        padding: 10px 0;
+        z-index: 10;
+      }
+    }
+
+    &__link {
+      color: $yellow;
+      width: 100%;
+      margin-right: 0;
+      display: inline-block;
+      padding: 15px 10px;
+    }
+
+    &__button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 13px 10px;
+
+      &.active {
+        .header__row {
+          transition: all .3s;
+
+          &--third {
+            display: none;
+          }
+
+          &--first {
+            transform: rotate(45deg) translate(6px, 5px);
+          }
+
+          &--second {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+    
+    &__menu {
+      margin-left: 15px;
+      margin-right: auto;
+    }
+
+    &__server-box {
+      padding: 5px 7px;
+    }
+  }
+
+  .uptitle {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .title {
+    font-size: 65px;
+    line-height: 65px;
+    max-width: 100%;
+  }
+
+  .about {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__box {
+      padding-top: 50px;
+      max-width: 100%;
+    }
+
+    &__slider {
+      padding-top: 50px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+
+    &__img {
+      width: 325px;
+      height: 400px;
+    }
+  }
+
+  .slick-dots {
+    left: 15px;
+  }
+
+  .slick__arrow {
+    top: 230px;
+    right: 100px;
+  }
+
+  .features {
+    &__inner {
+      padding-top: 50px;
+    }
+  }
+
+  .quotes {
+    &__right {
+      flex-direction: column;
+    }
+
+    &__box {
+      max-width: 100%;
+    }
+  }
+
+  .newsletter {
+    &:before {
+      left: -185px;
+    }
+
+    &__inner {
+      padding-left: 120px;
+    }
+
+    &__title {
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
+
+  .footer {
+    &__top {
+      flex-direction: column;
+    }
+
+    &__logo-link {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
+    &__list {
+      margin-bottom: 15px;
+    }
+
+    &__copy {
+      flex-direction: column;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .header {
+    &__title {
+      font-size: 64px;
+      line-height: 64px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .about {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__slider {
+      padding-top: 20px;
+    }
+  }
+
+  .features {
+    &__name {
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+
+  .requirements {
+    &__title {
+      margin-bottom: 50px;
+    }
+
+    &__row {
+      flex-direction: column;
+    }
+
+    &__box {
+      max-width: 100%;
+      padding-bottom: 20px;
+      padding-left: 15px;
+      border-bottom: 1px solid rgba(151,151,151,0.8);
+
+      &--big {
+        border-bottom: none;
+      }
+
+      &:after,
+      &:before {
+        display: none;
+      }
+    }
+
+    &__items {
+      border: 1px solid rgba(151,151,151,0.8);
+      background: none;
+      max-width: 100%;
+    }
+
+    &__name {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .quotes {
+    &__text,
+    &__nickname,
+    &__quote {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__name {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__text {
+      margin-bottom: 15px;
+    }
+
+    &__box {
+      margin-bottom: 15px;
+    }
+
+    &__quote {
+      margin-bottom: 5px;
+    }
+
+    &__top {
+      margin-bottom: 10px;
+    }
+  }
+
+  .newsletter {
+    &__form {
+      flex-direction: column;
+    }
+
+    &__input {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer {
+    &__copy-list {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__copy-link {
+      padding-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__link {
+      margin-right: 0;
+      display: inline-block;
+      padding: 13px 3px;
+    }
+
+    &__socials-link {
+      margin-right: 35px;
+    }
+
+    &__left {
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .header {
+    &__server-box {
+      display: none;
+    }
+
+    &__button {
+      position: absolute;
+      right: 0;
+      top: 45px;
+    }
+
+    &__box {
+      margin-right: 35px;
+    }
+
+    &__bottom {
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 33px;
+      line-height: 33px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+  }
+
+  .btn {
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 216px;
+  }
+
+  .uptitle {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .title {
+    font-size: 33px;
+    line-height: 33px;
+  }
+
+  .about {
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+
+      &-underline {
+        &:after {
+          width: 134px;
+        }
+      }
+    }
+
+    &__slider {
+      padding-top: 50px;
+    }
+
+    &__img {
+      width: 245px;
+      height: 293px;
+    }
+  }
+
+  .features {
+    height: auto;
+    min-height: 800px;
+    padding-bottom: 50px;
+
+    &__name {
+      font-size: 18px;
+      line-height: 21px;
+      height: 44px;
+
+      &.active {
+        &:after {
+          height: 202px;
+          top: 15px;
+        }
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 5px;
+
+      &.active {
+        height: 140px;
+      }
+    }
+  }
+
+  .requirements {
+    &__name {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .quotes {
+    &__text,
+    &__nickname,
+    &__quote,
+    &__date {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .newsletter {
+    height: auto;
+    min-height: 800px;
+    padding-bottom: 50px;
+
+    &:before {
+      left: -300px;
+      top: 10px;
+    }
+
+    &__inner {
+      padding-left: 0;
+    }
+
+    &__uptitle {
+      padding-top: 100px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+    }
+
+    &__btn {
+      max-width: 100%;
+    }
+  }
+}
+
+@media(min-width: 992px) {
+  .header {
+    &__button {
+      display: none;
+    }
+  }
+}
+
