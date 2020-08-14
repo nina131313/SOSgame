@@ -414,6 +414,10 @@
     height: auto;
     min-height: 600px;
 
+    &__scroll {
+      bottom: 5px;
+    }
+
     &__server-box {
       display: none;
     }
@@ -555,6 +559,7 @@
 
     &__inner {
       padding-left: 0;
+      z-index: 10;
     }
 
     &__uptitle {
