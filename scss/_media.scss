@@ -226,7 +226,7 @@
   .newsletter {
     &:before {
       left: -75px;
-      background: url(../images/newsletter-bg-dark2.png) center no-repeat;
+      background: url(../images/newsletter-bg-dark.png) center no-repeat;
     }
 
     &__inner {
@@ -550,21 +550,20 @@
 
   .newsletter {
     height: auto;
-    min-height: 700px;
+    min-height: 600px;
     padding-bottom: 50px;
+    background: #080A0B;
 
     &:before {
-      left: -190px;
-      top: 10px;
+      display: none;
     }
 
     &__inner {
       padding-left: 0;
-      z-index: 10;
     }
 
     &__uptitle {
-      padding-top: 100px;
+      padding-top: 50px;
     }
 
     &__text {
