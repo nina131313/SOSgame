@@ -84,6 +84,10 @@
 }
 
 @media(max-width: 992px) {
+  html {
+    overflow-x: hidden;
+  }
+
   .header {
     &__list {
       opacity: 0;
@@ -201,6 +205,9 @@
   }
 
   .features {
+    background: url(../images/features-bg-dark.jpg) center no-repeat;
+    background-size: cover;
+
     &__inner {
       padding-top: 50px;
     }
@@ -218,7 +225,8 @@
 
   .newsletter {
     &:before {
-      left: -185px;
+      left: -75px;
+      background: url(../images/newsletter-bg-dark.png) center no-repeat;
     }
 
     &__inner {
@@ -403,6 +411,9 @@
 
 @media(max-width: 576px) {
   .header {
+    height: auto;
+    min-height: 600px;
+
     &__server-box {
       display: none;
     }
@@ -428,7 +439,7 @@
 
     &__subtitle {
       font-size: 18px;
-      line-height: 18px;
+      line-height: 30px;
       text-transform: uppercase;
     }
   }
@@ -450,6 +461,9 @@
   }
 
   .about {
+    height: auto;
+    min-height: 800px;
+
     &__text {
       font-size: 14px;
       line-height: 16px;
@@ -468,6 +482,7 @@
     &__img {
       width: 245px;
       height: 293px;
+      margin: 0 auto;
     }
   }
 
@@ -501,6 +516,9 @@
   }
 
   .requirements {
+    height: auto;
+    min-height: 800px;
+
     &__name {
       font-size: 18px;
       line-height: 18px;
@@ -513,6 +531,9 @@
   }
 
   .quotes {
+    height: auto;
+    min-height: 800px;
+
     &__text,
     &__nickname,
     &__quote,
@@ -524,11 +545,11 @@
 
   .newsletter {
     height: auto;
-    min-height: 800px;
+    min-height: 700px;
     padding-bottom: 50px;
 
     &:before {
-      left: -300px;
+      left: -190px;
       top: 10px;
     }
 

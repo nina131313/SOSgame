@@ -16,6 +16,7 @@ $(function() {
         settings: {
           arrows: false,
           autoplay: true,
+          dots: false,
         }
       },
     ]
@@ -38,5 +39,12 @@ $(function() {
     $('.header__list').toggleClass('active');
   });
   
-  new WOW().init();
+  // new WOW().init();
+
+  wow = new WOW(
+    {
+    mobile: false,
+    }
+  )
+  wow.init();
 });

@@ -146,7 +146,7 @@
     overflow: hidden;
     transition: all .3s;
     position: absolute;
-    bottom: -60px;
+    bottom: -68px;
 
     &.active {
       opacity: 1;
@@ -257,6 +257,7 @@
   background: url(../images/about-bg.jpg) center no-repeat;
   background-size: cover;
   height: 100vh;
+  min-height: 800px;
 
   &__inner {
     display: flex;
@@ -339,6 +340,7 @@
 
 .features {
   height: 100vh;
+  min-height: 800px;
   background: url(../images/features-bg.jpg) center no-repeat;
   background-size: cover;
 
@@ -431,6 +433,7 @@
   background: url(../images/requirements-bg.jpg) center no-repeat;
   background-size: cover;
   height: 100vh;
+  min-height: 800px;
   padding-top: 80px;
 
   &__uptitle {
@@ -530,6 +533,7 @@
 
 .quotes {
   height: 100vh;
+  min-height: 800px;
   background: url(../images/quotes-bg.jpg) center no-repeat;
   background-size: cover;
   padding-top: 50px;
@@ -647,6 +651,7 @@
 
 .newsletter {
   height: 100vh;
+  min-height: 800px;
   background: #080A0B;
   position: relative;
 
