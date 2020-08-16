@@ -3,6 +3,13 @@ $(function() {
     $('.header__box-list').toggleClass('active');
   });
 
+  $('.header__box-dropdown').on('click', function() {
+    const lang = $(this).attr('data-lang'),
+          drop = document.querySelector('.header__dropdown');
+    drop.innerHTML = lang;
+    $('.header__box-list').removeClass('active');
+  });
+
   $('.about__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -17,6 +24,7 @@ $(function() {
           arrows: false,
           autoplay: true,
           dots: false,
+          infinite: true,
         }
       },
     ]

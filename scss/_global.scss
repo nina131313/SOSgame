@@ -15,7 +15,8 @@ body {
 }
 
 body {
-  font-family: 'OpenSans-Regular', sans-serif; 
+  font-family: 'OpenSans', sans-serif; 
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: #fff;
@@ -35,11 +36,13 @@ a {
 }
 
 @mixin opensans-bold {
-  font-family: 'OpenSans-Bold', sans-serif; 
+  font-family: 'OpenSans', sans-serif; 
+  font-weight: 700;
 }
 
 @mixin bebas {
-  font-family: 'BebasNeueBold', sans-serif; 
+  font-family: 'BebasNeue', sans-serif; 
+  font-weight: 700;
 }
 
 .container {
@@ -59,7 +62,7 @@ a {
   @include opensans-bold;
   background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
   border-radius: 4px;
-  padding: 17px 0 20px;
+  padding: 17px 5px 20px;
   text-align: center;
   max-width: 260px;
   width: 100%;
