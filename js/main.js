@@ -46,8 +46,6 @@ $(function() {
     $(this).toggleClass('active');
     $('.header__list').toggleClass('active');
   });
-  
-  // new WOW().init();
 
   wow = new WOW(
     {
