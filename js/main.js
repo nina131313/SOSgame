@@ -1,5 +1,6 @@
 $(function() {
   $('.header__dropdown').on('click', function() {
+    $(this).toggleClass('active');
     $('.header__box-list').toggleClass('active');
   });
 

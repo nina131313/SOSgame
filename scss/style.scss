@@ -115,6 +115,7 @@
       background: url(../images/down-header.svg) center no-repeat;
       top: 20px;
       right: 0;
+      transition: all .3s;
     }
 
     &:hover {
@@ -122,6 +123,12 @@
 
       &:after {
         background: url(../images/down-header-yellow.svg) center no-repeat;
+      }
+    }
+
+    &.active {
+      &:after {
+        transform: rotate(180deg);
       }
     }
   }
