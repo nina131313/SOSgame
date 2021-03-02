@@ -230,10 +230,6 @@
       background: url(../images/newsletter-bg-dark.png) center no-repeat;
     }
 
-    &__inner {
-      padding-left: 120px;
-    }
-
     &__title {
       font-size: 55px;
       line-height: 55px;
@@ -333,7 +329,7 @@
     &__name {
       font-size: 20px;
       line-height: 20px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
   }
 
@@ -386,7 +382,7 @@
     }
 
     &__copy-link {
-      padding-right: 0;
+      margin-right: 0;
 
       &:after {
         display: none;
@@ -449,7 +445,7 @@
 
     &__subtitle {
       font-size: 18px;
-      line-height: 30px;
+      line-height: 25px;
       text-transform: uppercase;
     }
   }
@@ -466,8 +462,8 @@
   }
 
   .title {
-    font-size: 33px;
-    line-height: 33px;
+    font-size: 25px;
+    line-height: 25px;
   }
 
   .about {
@@ -504,11 +500,11 @@
     &__name {
       font-size: 18px;
       line-height: 21px;
-      height: 44px;
+      min-height: 44px;
 
       &.active {
         &:after {
-          height: 202px;
+          height: 210px;
           top: 15px;
         }
       }
@@ -520,7 +516,7 @@
       letter-spacing: 5px;
 
       &.active {
-        height: 140px;
+        min-height: 140px;
       }
     }
   }
@@ -553,8 +549,16 @@
     }
 
     &__name {
-      font-size: 18px;
-      line-height: 18px;
+      font-size: 15px;
+      line-height: 15px;
+    }
+
+    &__name-box {
+      margin-left: 10px;
+    }
+
+    &__box {
+      padding: 15px 10px 20px 5px;
     }
   }
 

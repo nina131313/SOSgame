@@ -782,7 +782,7 @@
   }
 
   &__right {
-    padding-top: 2px;
+    padding-top: 5px;
   }
 
   &__socials {
@@ -837,7 +837,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding-right: 15px;
+    margin-right: 15px;
     padding-bottom: 15px;
     display: inline-block;
     padding-top: 15px;
@@ -851,13 +851,11 @@
       height: 14px;
       width: 1px;
       background: #fff;
-      right: 7px;
+      right: -7px;
       top: 16px;
     }
 
     &--last {
-      padding-right: 0;
-
       &:after {
         display: none;
       }
